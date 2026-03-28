@@ -98,15 +98,8 @@ To stop the app, go back to the terminal and press `Ctrl + C`.
 ## Project structure
 
 ```
-src/
-├── components/feature/     # Navbar, Footer, ProtectedRoute, ApiKeyPrompt
-├── contexts/               # Auth (login, XP, streaks) and Theme (dark/light mode)
-├── hooks/                  # useProgress — tracks subtopic completion percentages
-├── i18n/                   # Language config and locale strings
-├── lib/                    # DeepSeek API client for AI marking and lesson generation
-├── mocks/                  # All the content — subjects, lessons, questions, flashcards, etc.
-├── pages/                  # One folder per route, each with its own page.tsx
-└── router/                 # Route definitions and protected route logic
+index.html - the main html
+README.md - description and information
 ```
 
 ---
@@ -135,32 +128,6 @@ src/
 ---
 
 ## Dependencies
-
-### What the app actually uses
-
-| Package | Version | What it's for |
-|---|---|---|
-| `react` | ^19.1.2 | The whole UI |
-| `react-dom` | ^19.1.2 | Rendering to the browser |
-| `react-router-dom` | ^7.6.3 | Page routing |
-| `i18next` + `react-i18next` | ^25 / ^15 | Translations |
-| `recharts` | 3.2.0 | The weekly study chart on the dashboard |
-| `lucide-react` | ^0.469.0 | Icons |
-| `@supabase/supabase-js` | 2.57.4 | Ready for when we plug in the database |
-| `firebase` | 12.0.0 | Ready for auth in Phase 2 |
-| `@stripe/react-stripe-js` | 4.0.2 | There if we ever need payments |
-
-### Build and dev tooling
-
-| Package | Version | What it's for |
-|---|---|---|
-| `vite` | ^8.0.1 | Dev server and bundler |
-| `typescript` | ~5.8.3 | Type safety |
-| `tailwindcss` | ^3.4.17 | All the styling |
-| `unplugin-auto-import` | ^19.3.0 | Removes the need to import React hooks manually |
-| `eslint` + `typescript-eslint` | ^9 / ^8 | Keeping the code clean |
-
----
 
 ## What's coming next
 
